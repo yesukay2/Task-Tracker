@@ -102,6 +102,19 @@ class TaskDialog extends StatelessWidget {
       child: SizedBox(
         height: screenHeight * 0.6,
         width: screenWidth * 0.8,
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+              horizontal: screenWidth * 0.05, vertical: screenHeight * 0.02),
+          child: const Column(children: [
+            Text(
+              "Add New Task",
+              style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.white),
+            )
+          ]),
+        ),
       ),
     );
   }
